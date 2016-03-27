@@ -1,0 +1,4 @@
+- added some comments
+- removed forgotten commented out code
+- retract the noun 'a' that is loaded from WordNet, because it was messing up our parser
+- retract previous definitions of the top goal in define_goal

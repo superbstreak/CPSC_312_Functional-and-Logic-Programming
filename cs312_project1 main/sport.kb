@@ -1,0 +1,129 @@
+% water sports are fun.
+rule:
+if   it plays "n:in water"
+then its label is waterbased.
+
+% team sports are fun to watch
+% the most popular sport is a team sport.
+rule:
+if   it requires teammates
+then its type is team.
+
+rule:
+if   its label is waterbased and
+     its type is team and
+     it requires sailboats
+then it is sailing.
+
+rule:
+if   its label is waterbased and
+     its type is team and
+     it requires balls
+then it is "n:water polo".
+
+rule:
+if   its label is waterbased and
+     its type is individual
+then it is swimming.
+
+% land sports has a lot of varieties
+% soccer and lacrosse are pretty popular in Canada.
+rule:
+if   it plays "n:on land"
+then its label is landbased.
+
+rule:
+if   it requires oneself
+then its type is individual.
+
+rule:
+if   its label is landbased and 
+     its type is individual and
+     it requires clubs
+then it is golf.
+
+rule:
+if   its label is landbased and
+     its type is individual and
+     it requires weights
+then it is weightlifting.
+
+% racquet sports requires high agility.
+rule:
+if   it requires racquet
+then its category is racquet.
+
+rule:
+if   its label is landbased and
+     its type is individual and
+     its category is racquet and
+     its ball is fuzzy
+then it is tennis.
+
+rule:
+if   its label is landbased and
+     its type is team and
+     it requires sticks and balls
+then it is lacrosse.
+
+rule:
+if   its label is landbased and
+     its type is team and
+     it requires bats and gloves
+then it is baseball.
+
+rule:
+if   its label is landbased and
+     its type is team and
+     it requires cars
+then it is racing.
+
+rule:
+if   its label is landbased and
+     its type is team and
+     it requires pins and balls
+then it is bowling.
+
+% ice sports are amazing.
+rule:
+if   it requires ice
+then its category is ice.
+
+rule:
+if   its label is landbased and
+     its type is team and
+     its category is ice and
+     it requires sticks and pucks
+then it is "n:ice hockey".
+
+rule:
+if   its label is landbased and
+     its type is team and
+     its category is ice and
+     it requires stones
+then it is curling.
+
+% sports with different ball shapes
+% spherical ball bounces regularly
+% spheroidal shaped balls bounces irregularly.
+
+rule:
+if   its label is landbased and
+     its type is team and
+     its ball is spherical and
+     it requires hoops
+then it is basketball.
+
+rule:
+if   its label is landbased and
+     its type is team and
+     its ball is spherical and
+     it requires keepers
+then it is soccer.
+
+rule:
+if   its label is landbased and 
+     its type is team and
+     its ball is spheroidal
+then it is football.
+
